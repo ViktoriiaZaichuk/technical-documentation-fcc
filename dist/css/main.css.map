@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/_variables.scss",
+        "../../scss/_responsive.scss",
+        "../../scss/_globals.scss",
+        "../../scss/_tech-doc-page.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
