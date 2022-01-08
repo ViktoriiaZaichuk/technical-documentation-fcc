@@ -1,0 +1,67 @@
+/* GENERAL STYLES */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 1.8rem;
+    font-family: $bodyTxt;
+    color: $black;
+    background-color: $backGround;
+}
+
+
+/* FLEXBOX */
+.flex {
+    display: flex; 
+
+    &-jc-sb {
+      justify-content: space-between;
+    }
+
+    &-jc-c {
+      justify-content: center;
+    }
+    &-jc-se {
+      justify-content: space-evenly;
+    }
+    &-jc-sa {
+      justify-content: space-around;
+    }
+    
+    &-ai-c {
+      align-items: center;
+    }
+    
+    &-fd-c {
+        flex-direction: column;
+    }
+}
+
+
+/* TEXT */
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    max-width: 70rem;
+    margin: 1rem 0;
+}
