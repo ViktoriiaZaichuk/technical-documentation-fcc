@@ -1,0 +1,16 @@
+/* MIXINS RESPONSIVE */
+$screen768: 768px;
+
+@mixin screen768 {
+    @media (max-width: #{$screen768}) {
+      @content;
+    }
+}
+
+$screen500: 500px;
+
+@mixin screen500 {
+  @media (max-width: #{$screen500}) {
+    @content;
+  }
+}

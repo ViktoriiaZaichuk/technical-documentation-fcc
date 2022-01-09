@@ -20,6 +20,17 @@ body {
     font-family: $bodyTxt;
     color: $black;
     background-color: $backGround;
+
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-areas: "navbar main";
+    overflow-x: hidden;
+    @include screen768 {
+      grid-template-areas: 
+      "navbar"
+      "main";
+      grid-template-columns: 1fr;
+    }
 }
 
 
@@ -64,4 +75,25 @@ li {
 p {
     max-width: 70rem;
     margin: 1rem 0;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $codeBackground; 
+  border: .2rem solid $black;
+  border-top: none;
+  border-bottom: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $pinkAccent;
+  border: .2rem solid $black;
+  border-radius: 1.5rem; 
 }

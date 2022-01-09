@@ -1,18 +1,45 @@
 #navbar {
-  /*   position: fixed; */
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 300px;
-  
+    position: fixed;
+    border-right: 0.3rem solid $black;
+    grid-area: navbar;
+    width: 31rem;
+    min-height: 100vh;
+    padding: 2rem;
+    @include screen768 {
+        position: relative;
+        min-height: auto;
+        border-right: none;
+    }
+    & header {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    & a {
+        font-size: 1.8rem;
+        transition: .2s;
+        text-transform: uppercase;
+        &:hover {
+            text-shadow: 3px 1px $yellowAccent;
+        }
+    }
 }
 
+
+#main-doc {
+    grid-area: main;
+    padding: 2rem;
+    & .wrapper-code {
+        @include screen500 {
+            flex-direction: column;
+        }
+    }
+}  
 
 header {
     font-family: $headings;
     font-weight: 600;
     font-size: 3rem;
+    text-shadow: 3px 1px $yellowAccent;
 }
 
 section {
@@ -46,6 +73,12 @@ section {
         li {
             list-style: inside;
             list-style-type: disc;
+            & a {
+                transition: .2s;
+                &:hover {
+                    text-shadow: 3px 1px $yellowAccent;
+                }
+            }
         }
     }
 }
