@@ -1,7 +1,7 @@
 # Technical Documentation - freeCodeCamp project
 
 
-This is a solution to the [Build a Personal Portfolio Webpage](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
+This is a solution to the [Build a Technical Documentation Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
 
 
 ### The challenge
